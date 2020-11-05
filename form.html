@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Design</title>
+    <link rel="stylesheet" href="form.css">
+    <style>
+        input[type=text]{
+            width: 100%;
+            font-size: 1rem;
+            padding: 10px 20px;
+            margin: 20px 0;
+            border: 3px solid blue;
+            color: brown;
+            letter-spacing: 2px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background-color: sandybrown;
+            /*border: none;
+            border-bottom: 3px solid salmon;*/
+
+        }
+        #search{
+            background-image: url("image.png");
+            background-repeat: no-repeat;
+            background-position: 8px ;
+            font-size: 1rem;
+            padding: 15px 100px;
+            background-color: snow;
+            width: 150px;
+            transition: width 0.3s ease-in-out;
+        }
+        #search:focus{
+            background-color: steelblue;
+            width: 100%;
+        }
+        textarea{
+            resize: none;
+            width: 50%;
+            padding: 20px;
+            margin-top: 30px;
+            border: 3px solid grey;
+            border-radius: 10px;
+            background-color: sandybrown;
+        }
+        input[type="button"]{
+            background-color: sandybrown;
+            width: 100px;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+
+        }
+        select{
+            width:50%;
+            padding: 20px;
+            background-color: sandybrown;
+            border: 3px solid blue;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <select name="subject_name" id="subjects">
+            <option value="c">C program</option>
+            <option value="c++">Javascript</option>
+            <option value="c">Python</option>
+        </select>
+        <input type="text" name="search" id="search" placeholder="search" id="search">
+        <label for="fname"><p>First name</p></label>
+        <input type="text" name="fname" id="fname">
+        <label for="lname">Last name</label>
+        <input type="text" name="lname" id="lname">
+        <textarea name="" id="" cols="30" rows="10" placeholder="write your comment here"></textarea>
+        <p></p>
+        <input type="button" value="Submit">
+        <input type="button" value="Reset">
+    </form>
+</body>
+</html>
